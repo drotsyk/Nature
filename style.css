@@ -1,20 +1,83 @@
 body{
     margin: 0;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+
 :root{
     --font:'Montserrat', sans-serif;
+}
+.main-page{
+    background-image: url(img/main-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-page__menu{
+    position: absolute;
+    top: 2%;
+    left: 42%;
+}
+.main-page__menu ul{
+    display: flex;
+    justify-content: center;
+}
+.menu-elements{
+    color: white;
+    margin: 0 20px;
+    font-family: var(--font);
+    font-size: 20px;
+}
+.main-page__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-elements:hover{
+    opacity: 0.6;
+}
+.main-page__sub-title{
+    text-align: center;
+    margin: 40px 0;
+    font-family: var(--font);
+    color: white;
+    font-size: 30px;
+}
+.main-page__button{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid white;
+    padding: 10px 80px;
+    color: white;
+    background: transparent;
+    font-family: var(--font);
 }
 .wrapper{
     margin: 0 auto;
     max-width: 1850px;
-    margin: 0 30px;
+    padding: 0 30px;
 }
 .about-us{
     display: flex;
     padding: 30px 0;
 }
 .info{
-    padding: 250px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .info__title{
     color: #C4C4C4;
@@ -22,7 +85,9 @@ body{
     font-size: 22px;
     font-weight: 500;
 }
-
+.about-us__picture{
+    box-shadow: 1px 5px 20px;
+}
 .info__sub-title{
     font-family: var(--font);
     font-size: 30px;
@@ -43,9 +108,127 @@ body{
     cursor: pointer;
     font-family: var(--font);
 }
-@media only screen  and (min-width: 767px) and (max-width:1352px){
-    .about-us{
-        display: flex;
-        flex-direction: column;
-    }
+.title{
+    text-align: center;
+    font-family: var(--font);
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin: 161px 0 0 0;
 }
+.sub-title{
+    color: #5B5B5C;
+    font-family: var(--font);
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    width: 53%;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+.photos__gallery img{
+    display: block;
+}
+.img-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 38px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.travel__title{
+    font-family: var(--font);
+    margin: 55px 0;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.travel__sub-title{
+    color: #848484;
+    font-family: var(--font);
+    letter-spacing: 4px;
+    font-size: 19px;
+    margin: 80px 0 79px 0;
+    width: 89%;
+}
+.travel__img{
+    margin: 65px 0 0 0;
+}
+.travel__button{
+    padding: 10px 28px;
+    background-color: #DDDCDC;
+    border: 0px;
+}
+.tour{
+    display: flex;
+    padding: 150px 0 0 0;
+    justify-content: space-between;
+}
+.width{
+    width: 45%;
+}
+.tour .info{
+    width: 35%;
+}
+.tour .info__text{
+    width: 100%;
+}
+.tour .info__sub-title{
+    max-width: 80%;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    padding: 155px 0;
+}
+.form__title{
+    font-family: var(--font);
+    font-size: 30px;
+    font-weight: 500;
+}
+.form__subtitle{
+    font-family: var(--font);
+    color: #5B5B5C;
+    font-size: 18px;
+}
+.form__input{
+    font-family: var(--font);
+    padding: 13px 30px 13px 10px;
+    margin: 0 40px;
+}
+.form__button{
+    padding: 10px 64px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: var(--font);
+}
+.footer{
+    text-align: center;
+    padding: 95px 0;
+}
+.footer__menu{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font);
+    
+}
+.footer__menu a{
+    margin: 0 0 65px 40px;
+    color: #000000; 
+}
+.footer__menu a:hover{
+    opacity: 0.5;
+}
+.footer__title, .footer__sub-title{
+    color: #000000;
+    font-family: var(--font);
+    margin: 20px 0;
+}
+
+
+
