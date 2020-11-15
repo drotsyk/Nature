@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: var(--font) 
 }
 ul {
   margin: 0;
@@ -11,13 +12,14 @@ li {
 a {
   text-decoration: none;
 }
-
 :root {
   --font: "Montserrat", sans-serif;
 }
 button {
   cursor: pointer;
 }
+
+
 .main-page {
   background-image: url(img/main-bg.jpeg);
   background-repeat: no-repeat;
@@ -40,7 +42,6 @@ button {
 }
 .menu-elements {
   color: white;
-  font-family: var(--font);
   font-size: 20px;
   transition: opacity 0.5s, transform 0.5s;
 }
@@ -59,7 +60,6 @@ ul .menu-elements + .menu-elements {
 .main-page__sub-title {
   text-align: center;
   margin: 40px 0;
-  font-family: var(--font);
   color: white;
   font-size: 30px;
 }
@@ -70,7 +70,6 @@ ul .menu-elements + .menu-elements {
   padding: 10px 80px;
   color: white;
   background: transparent;
-  font-family: var(--font);
   transition: transform 0.5s;
 }
 .main-page__button:hover {
@@ -92,7 +91,6 @@ ul .menu-elements + .menu-elements {
 }
 .info__title {
   color: #c4c4c4;
-  font-family: var(--font);
   font-size: 22px;
   font-weight: 500;
 }
@@ -100,13 +98,11 @@ ul .menu-elements + .menu-elements {
   box-shadow: 1px 5px 20px;
 }
 .info__sub-title {
-  font-family: var(--font);
   font-size: 30px;
   font-weight: 500;
   max-width: 50%;
 }
 .info__text {
-  font-family: var(--font);
   font-size: 22px;
   color: #5b5b5c;
   width: 56%;
@@ -117,7 +113,6 @@ ul .menu-elements + .menu-elements {
   border: 1px solid black;
   background-color: white;
   cursor: pointer;
-  font-family: var(--font);
   transition: transform 0.2s, background-color 0.5s, color 0.2s;
 }
 .about-us__button:hover {
@@ -127,7 +122,6 @@ ul .menu-elements + .menu-elements {
 }
 .title {
   text-align: center;
-  font-family: var(--font);
   font-size: 30px;
   letter-spacing: 4px;
   font-weight: 600;
@@ -135,7 +129,6 @@ ul .menu-elements + .menu-elements {
 }
 .sub-title {
   color: #5b5b5c;
-  font-family: var(--font);
   font-weight: 500;
   margin: 0 auto;
   text-align: center;
@@ -157,14 +150,12 @@ ul .menu-elements + .menu-elements {
   justify-content: space-between;
 }
 .travel__title {
-  font-family: var(--font);
   margin: 55px 0;
   letter-spacing: 3px;
   font-weight: 600;
 }
 .travel__sub-title {
   color: #848484;
-  font-family: var(--font);
   letter-spacing: 4px;
   font-size: 19px;
   margin: 80px 0 79px 0;
@@ -192,7 +183,7 @@ ul .menu-elements + .menu-elements {
   justify-content: space-between;
 }
 .width {
-  width: 45%;
+  width: 50%;
 }
 .tour .info {
   width: 35%;
@@ -211,17 +202,14 @@ ul .menu-elements + .menu-elements {
   padding: 155px 0;
 }
 .form__title {
-  font-family: var(--font);
   font-size: 30px;
   font-weight: 500;
 }
 .form__subtitle {
-  font-family: var(--font);
   color: #5b5b5c;
   font-size: 18px;
 }
 .form__input {
-  font-family: var(--font);
   padding: 13px 30px 13px 10px;
   margin: 0 40px;
 }
@@ -231,7 +219,6 @@ ul .menu-elements + .menu-elements {
   color: white;
   font-size: 18px;
   letter-spacing: 3px;
-  font-family: var(--font);
   transition: background-color 1s, color 1s;
 }
 .form__button:hover {
@@ -245,7 +232,6 @@ ul .menu-elements + .menu-elements {
 .footer__menu {
   display: flex;
   justify-content: center;
-  font-family: var(--font);
 }
 .footer__menu a {
   color: black;
@@ -260,15 +246,37 @@ ul .menu-elements + .menu-elements {
 .footer__title,
 .footer__sub-title {
   color: #000000;
-  font-family: var(--font);
   margin: 20px 0;
 }
 
-@media screen and (max-width: 1554px) {
+@media screen and (max-width: 1700px) {
+  .wrapper .row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .width{
+    width: 100%;
+  }
+  .travel .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+  
+}
+@media screen and (max-width: 1620px) {
   .row {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  .about-us img{
+    transform: scale(0.8,0.8);
+  }
+  .tour__img{
+    transform: scale(0.8,0.8);
   }
   .wrapper {
     display: flex;
@@ -305,14 +313,13 @@ ul .menu-elements + .menu-elements {
     width: 100%;
     max-width: 100%;
   }
-
   .tour .info,
   .tour .info__sub-title {
     width: 100%;
     text-align: center;
     max-width: 100%;
   }
-  .sub-title{
+  .sub-title {
     width: 100%;
   }
   .form__input,
@@ -328,11 +335,18 @@ ul .menu-elements + .menu-elements {
     transition: transform 2s;
   }
 }
+
 @media screen and (max-width: 846px) {
   .travel__img {
-    transform: scale(0.5, 0.5);
+    transform: scale(0.4, 0.4);
   }
-  .sub-title{
+  .about-us img{
+    transform: scale(1,0.5);
+  }
+  .tour__img{
+    transform: scale(1,0.5);
+  }
+  .sub-title {
     width: 100%;
   }
   .img-group {
@@ -344,6 +358,47 @@ ul .menu-elements + .menu-elements {
   .main-page__button {
     transform: scale(1.2, 1.2);
     transition: transform 2s;
-
+  }
+  .footer__menu{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__menu a + a{
+    margin: 0;
+  }
+  .travel__button{
+    transform: scale(1.5,1.5);
+  }
+}
+@media screen and (max-width:320px){
+  .travel__img{
+    transform: scale(0.3,0.5);
+  }
+  .tour{
+    padding: 0;
+  }
+  .title{
+    margin: 0;
+  }
+  .footer__menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__menu a + a{
+    margin: 0;
+  }
+  .about-us img{
+    transform: scale(0.4,0.4);
+  }
+  .tour__img{
+    transform: scale(0.4,0.4);
+  }
+  .main-page__title img {
+    transform: scale(0.4, 0.4);
+}
+  img{
+    align-self: center;
   }
 }
