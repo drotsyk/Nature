@@ -22,23 +22,24 @@
   <body>
     <div class="main-page">
       <nav class="main-page__menu">
-        <ul>
+        <ul class="main-page__list">
           <li class="menu-elements">Home</li>
           <li class="menu-elements">About</li>
           <li class="menu-elements">Travel</li>
         </ul>
       </nav>
-      <div class="main-page__title">
-        <img src="img/Business Travel@1X.png" alt="" />
+      <img class="main-page__title" src="img/Business Travel@1X.png" alt="" />
+      <div class="left">
+        <div class="main-page__sub-title">
+          For entrepreneurs and freelancers
+        </div>
+        <button class="main-page__button">MORE INFO</button>
       </div>
-      <div class="main-page__sub-title">
-        For entrepreneurs and freelancers
-      </div>
-      <button class="main-page__button">MORE INFO</button>
+      
     </div>
     <main>
       <div class="wrapper about-us">
-        <div class="info">
+        <div class="info left">
           <p class="info__title">About us</p>
           <h1 class="info__sub-title">
             WE WILL TURN YOUR WORK INTO AN EXCITING JOURNEY.
@@ -62,27 +63,32 @@
             <button class="about-us__button">MORE INFO</button>
           </div>
         </div>
-        <img class="about-us__picture" src="img/arka.png" alt="" />
+        <div class="right">
+          <img class="about-us__picture" src="img/arka.png" alt="" />
+        </div>
+        
       </div>
       <section class="photos">
         <div class="wrapper">
-          <div class="title">PHOTOS OF OUR TRAVELS</div>
-          <div class="sub-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
+          <div class="top">
+            <div class="title">PHOTOS OF OUR TRAVELS</div>
+            <div class="sub-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </div>
           </div>
-          <div class="photos__gallery">
-            <div class="img-group">
+          <div class="photos__gallery ">
+            <div class="img-group left">
               <img src="img/1.png" alt="" class="img-proup__gallery" />
               <img src="img/2.png" alt="" class="img-proup__gallery" />
               <img src="img/3.png" alt="" class="img-proup__gallery" />
             </div>
-            <div class="img-group">
+            <div class="img-group left">
               <img src="img/4.png" alt="" class="img-proup__gallery" />
               <img src="img/5.png" alt="" class="img-proup__gallery" />
               <img src="img/6.png" alt="" class="img-proup__gallery" />
             </div>
-            <div class="img-group">
+            <div class="img-group left">
               <img src="img/7.png" alt="" class="img-proup__gallery" />
               <img src="img/8.png" alt="" class="img-proup__gallery" />
               <img src="img/9.png" alt="" class="img-proup__gallery" />
@@ -92,13 +98,15 @@
       </section>
       <section class="travel">
         <div class="wrapper">
-          <div class="title">TRAVEL WITH OUR COMPANY</div>
-          <div class="sub-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
+          <div class="top">
+            <div class="title">TRAVEL WITH OUR COMPANY</div>
+            <div class="sub-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </div>
           </div>
           <div class="row">
-            <div class="group">
+            <div class="group left">
               <img class="travel__img" src="img/travel__home.png" alt="" />
               <h3 class="travel__title">
                 COMFORTABLE PREMIUM CLASS ACCOMMODATIONS
@@ -110,7 +118,7 @@
               </div>
               <button class="travel__button">VIEW PHOTOS</button>
             </div>
-            <div class="group width">
+            <div class="group right width">
               <img class="travel__img" src="img/travel__man.png" alt="" />
               <h3 class="travel__title">
                 WEEKLY GROUP ENTERTAINMENT AND EXCURSIONS
@@ -126,11 +134,13 @@
         </div>
       </section>
       <section class="tour wrapper">
-        <img class="tour__img" src="img/tour__nature.png" alt="" />
-        <div class="info">
+        <div class="left">
+          <img class="tour__img" src="img/tour__nature.png" alt="" />
+        </div>
+        <div class="info width35 right">
           <div class="info__title">Next Tour</div>
-          <h1 class="info__sub-title">UNFORGETTABLE ADVENTURE IN FILIPINAS</h1>
-          <div class="info__text">
+          <h1 class="info__sub-title width80">UNFORGETTABLE ADVENTURE IN FILIPINAS</h1>
+          <div class="info__text width100">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus
             purus in massa tempor nec feugiat nisl pretium fusce. Ac turpis
@@ -155,7 +165,7 @@
       </section>
       <div class="wrapper">
         <section class="form">
-          <div class="group">
+          <div class="group left">
             <div class="form__title">BOOK A DISCOUNTER TOUR</div>
             <div class="form__subtitle">
               Mauris ultrices eros in cursus turpis
@@ -168,7 +178,7 @@
       </div>
     </main>
     <div class="wrapper">
-      <footer class="footer">
+      <footer class="footer left">
         <div class="group">
           <nav>
             <ul class="footer__menu">
