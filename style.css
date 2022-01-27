@@ -1,6 +1,11 @@
 body {
   margin: 0;
   font-family: var(--font);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html, body {
+  overflow-x:hidden 
 }
 ul {
   margin: 0;
@@ -19,6 +24,21 @@ a {
 button {
   cursor: pointer;
 }
+.left {
+  transform: translate(-100%,0);
+  opacity: 0;
+  transition: 1.5s ease;
+}
+.top {
+  transform: translate(0,-100%);
+  opacity: 0;
+  transition: 1.5s ease;
+}
+.right {
+  transform: translate(+100%,0);
+  opacity: 0;
+  transition: 1.5s ease;
+}
 .main-page {
   background-image: url(img/main-bg.jpeg);
   background-repeat: no-repeat;
@@ -26,7 +46,6 @@ button {
   background-position: center;
   height: 100vh;
   display: flex;
-  display: -ms-flexbox;
   -ms-flex-pack: center;
   flex-direction: column;
   -webkit-flex-direction: column;
@@ -34,13 +53,13 @@ button {
   -webkit-justify-content: center;
   padding: 0 20px;
 }
-.main-page__menu{
+.main-page__menu {
   position: absolute;
   top: 2%;
-  right: 50%;
   left: 50%;
+  transform: translate(-50%, 50%);
 }
-.main-page__menu ul {
+.main-page__list {
   display: flex;
   display: -ms-flexbox;
   -ms-flex-pack: center;
@@ -57,11 +76,10 @@ ul li + li {
   margin-left: 20px;
 }
 .main-page__title {
+  margin: 0 auto;
   display: -ms-flexbox;
   -ms-flex-pack: center;
   display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
   align-items: center;
 }
 .menu-elements:hover {
@@ -103,7 +121,6 @@ ul li + li {
 }
 .info {
   display: flex;
-  display: -ms-flexbox;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-justify-content: center;
@@ -216,13 +233,13 @@ ul li + li {
 .width {
   width: 50%;
 }
-.tour .info {
+.width35 {
   width: 35%;
 }
-.tour .info__text {
+.width100 {
   width: 100%;
 }
-.tour .info__sub-title {
+.width80 {
   max-width: 80%;
 }
 .form {
@@ -295,21 +312,6 @@ ul li + li {
     -webkit-justify-content: space-between;
     flex-direction: column;
     -webkit-flex-direction: column;
-  }
-  ul li + li {
-    margin-left: 0;
-  }
- 
-  .main-page__menu ul{
-    display: flex;
-    display: -ms-flexbox;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    -webkit-justify-content: space-evenly;
-    align-items: center;
-  }
-  ul .menu-elements + .menu-elements{
-    margin: 20px 0 0 0;
   }
   .width {
     width: 100%;
@@ -414,7 +416,7 @@ ul li + li {
   .title{
     margin: 20px 0 0 0;
   }
-  .main-page__title img {
+  .main-page__title{
     width: 100%;
     height: auto;
   }
@@ -473,4 +475,8 @@ ul li + li {
   img {
     align-self: center;
   }
+}
+.active {
+  transform: translate(0);
+  opacity: 1;
 }
