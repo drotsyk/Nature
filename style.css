@@ -2,11 +2,7 @@ body {
   margin: 0;
   font-family: var(--font);
   box-sizing: border-box;
-<<<<<<< HEAD
   overflow-x: hidden;
-=======
-  overflow: hidden;
->>>>>>> 1dec94e46e45bbdb26013a44a8f2b920476f449c
 }
 html, body {
   overflow-x:hidden 
@@ -415,6 +411,9 @@ ul li + li {
 @media screen and (max-width: 846px) {
   .title{
     margin: 20px 0 0 0;
+  }
+  .travel__sub-title {
+    margin: 0 0 30px 0;
   }
   .main-page__title{
     width: 100%;
